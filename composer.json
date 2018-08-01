@@ -1,0 +1,37 @@
+
+{
+    "name": "johanleroux/laravel-notify",
+    "description": "Flexible flash notifications for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Johan le Roux",
+            "email": "mail@johanleroux.me"
+        },
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Blacksmith\\Notify\\": "src/"
+        },
+        "files": [
+            "src/Blacksmith/Notify/functions.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Blacksmith\\Notify\\NotifyServiceProvider"
+            ],
+            "aliases": {
+                "Notify": "Blacksmith\\Notify\\Facades\\Notify"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
