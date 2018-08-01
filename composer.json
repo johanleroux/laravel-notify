@@ -7,7 +7,7 @@
         {
             "name": "Johan le Roux",
             "email": "mail@johanleroux.me"
-        },
+        }
     ],
     "require": {
         "php": ">=5.4.0",
